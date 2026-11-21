@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>虎卫五 · 官方站点</title>
+<meta name="description" content="虎星战争爆发，你驻扎在虎卫五「坟墓」监测站——虎星封锁网的第 76 号节点。你在一次外出执行任务时，意外发生了……科幻视觉小说《虎卫五》序章 Demo。">
+<meta name="theme-color" content="#08201a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="虎卫五 · Tigris Planeta V">
+<meta property="og:description" content="虎星战争爆发，你驻扎在虎卫五「坟墓」监测站——虎星封锁网的第 76 号节点。你在一次外出执行任务时，意外发生了……">
+<meta property="og:image" content="assets/img/start1-og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23081f19'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='none' stroke='%235fe8b6' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="assets/img/start1.webp">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- 背景：全站唯一图片（start1） -->
+<div class="bg" aria-hidden="true">
+  <img src="assets/img/start1.webp" alt="" fetchpriority="high">
+  <span class="bg-veil"></span>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ 顶部 HUD ============ -->
+<header class="hud">
+  <a class="brand" href="#home" data-go="0">
+    <span class="brand-name" data-i18n="brand">虎卫五</span>
+    <span class="brand-sub" data-i18n="brandSub">TIGRIS PLANETA V</span>
+  </a>
+
+  <nav class="hud-nav" aria-label="页面导航">
+    <button type="button" data-go="0" data-i18n="nav.home">首页</button>
+    <button type="button" data-go="1" data-i18n="nav.world">世界观</button>
+    <button type="button" data-go="2" data-i18n="nav.excerpt">节选</button>
+    <button type="button" data-go="3" data-i18n="nav.gameplay">玩法</button>
+    <button type="button" data-go="4" data-i18n="nav.download">下载</button>
+  </nav>
+
+  <div class="hud-tools">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="zh">中文</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ja">日本語</button>
+    </div>
+
+    <button type="button" class="bgm-btn" id="bgmBtn" aria-pressed="false" aria-label="背景音乐">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M9 17.5V6l10-2v11.5"/>
+        <ellipse cx="6.4" cy="17.8" rx="2.6" ry="2.2"/>
+        <ellipse cx="16.4" cy="15.8" rx="2.6" ry="2.2"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ============ 横向分屏 ============ -->
+<main class="deck" id="deck">
+
+  <!-- 00 首页 -->
+  <section class="panel" id="home" data-index="0" aria-label="首页">
+    <div class="panel-inner hero">
+      <!-- LOGO 位：默认显示占位框。在 content.js 里填 SITE.logo 即可替换 -->
+      <div class="logo-slot" id="logoSlot" aria-hidden="true"><span>LOGO</span></div>
+
+      <p class="eyebrow" data-i18n="hero.eyebrow">第 87 号星际探索舰队 · 76 号节点</p>
+      <h1 class="title" data-i18n="hero.title">虎卫五</h1>
+      <p class="title-sub" data-i18n="hero.sub">TIGRIS PLANETA V</p>
+      <p class="hero-lead" data-i18n="hero.tagline">虎星战争爆发，你驻扎在虎卫五「坟墓」监测站——虎星封锁网的第 76 号节点。你在一次外出执行任务时，意外发生了……</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#download" data-go="4">
+          <span data-i18n="hero.cta1">下载 Demo</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 2v9M4.5 7.5 8 11l3.5-3.5M3 14h10"/></svg>
+        </a>
+        <button class="btn btn-line" type="button" data-go="1" data-i18n="hero.cta2">了解世界观</button>
+      </div>
+
+      <p class="hero-prologue" data-i18n="hero.prologue">序章 · 太空奇遇</p>
+    </div>
+  </section>
+
+  <!-- 01 世界观 -->
+  <section class="panel" id="world" data-index="1" aria-label="世界观">
+    <div class="panel-inner">
+      <p class="kicker"><b>01</b><span data-i18n="world.kicker">世界观</span></p>
+      <h2 class="h2" data-i18n="world.title">两个文明，一场战争</h2>
+      <p class="lead" data-i18n="world.lead">两年前，人类第 87 号远征队抵达虎星。双方数次交涉未果，摩擦持续升级，同年冬，虎帝国向人类宣战。</p>
+
+      <div class="split">
+        <div class="split-col">
+          <span class="split-mark">A</span>
+          <h3 data-i18n="world.a.name">虎帝国</h3>
+          <p class="split-tag" data-i18n="world.a.tag">守方 · 主场 · 补给充足</p>
+          <p class="split-line" data-i18n="world.a.line">完整生物圈与星际工业，但无力夺回轨道。</p>
+        </div>
+        <div class="split-col">
+          <span class="split-mark">B</span>
+          <h3 data-i18n="world.b.name">人类远征队</h3>
+          <p class="split-tag" data-i18n="world.b.tag">攻方 · 远征 · 科技略高</p>
+          <p class="split-line" data-i18n="world.b.line">掌握轨道与航道，但无力登陆母星。</p>
+        </div>
+        <p class="statline" data-i18n="world.stat">虎卫五 · 直径 25.2 公里 · 站内代号「坟墓」</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 节选 -->
+  <section class="panel panel--center" id="excerpt" data-index="2" aria-label="剧情节选">
+    <div class="panel-inner excerpt">
+      <p class="excerpt-label" data-i18n="excerpt.label">剧情节选</p>
+      <blockquote>
+        <p data-i18n="excerpt.quote">这颗卫星没有大气。没有风，没有声音，这里只有遍地的岩石和天空中那脆绿色的虎星。</p>
+        <cite data-i18n="excerpt.cite">序章 · 第一幕《异常信号》</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 03 玩法 / 截图 -->
+  <section class="panel" id="gameplay" data-index="3" aria-label="玩法">
+    <div class="panel-inner">
+      <div class="gp-head">
+        <div>
+          <p class="kicker"><b>02</b><span data-i18n="gameplay.kicker">玩法</span></p>
+          <h2 class="h2" data-i18n="gameplay.title">玩法与画面</h2>
+        </div>
+        <p class="gp-lead" data-i18n="gameplay.lead">视觉小说为骨架，解谜与战斗为关节。以下为开发中画面。</p>
+      </div>
+
+      <div class="shots-outer">
+        <!-- 截图由 content.js 的 SITE.screenshots 生成；为空时显示占位框 -->
+        <div class="shots" id="shots" tabindex="0" aria-label="游戏截图"></div>
+      </div>
+
+      <div class="gp-foot">
+        <p class="hint" data-i18n="gameplay.hint">左右拖动浏览</p>
+        <div class="shots-ctrl">
+          <button type="button" id="shotsPrev" aria-label="上一张">&#8249;</button>
+          <button type="button" id="shotsNext" aria-label="下一张">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 下载 -->
+  <section class="panel" id="download" data-index="4" aria-label="下载">
+    <div class="panel-inner dl">
+      <div class="dl-main">
+        <p class="kicker"><b>03</b><span data-i18n="download.kicker">下载</span></p>
+        <h2 class="h2" data-i18n="download.title">下载序章 Demo</h2>
+        <p class="lead" data-i18n="download.desc">当前为开发中版本，包含序章三幕与战斗模块。正式内容以最终发布为准。</p>
+
+        <div class="dl-actions">
+          <a class="btn btn-solid btn-lg" id="quarkBtn" href="#" target="_blank" rel="noopener">
+            <span data-i18n="download.cta">夸克网盘</span>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 2v9M4.5 7.5 8 11l3.5-3.5M3 14h10"/></svg>
+          </a>
+          <em class="dl-pending" id="dlPending" data-i18n="download.pending">链接即将开放</em>
+        </div>
+        <p class="dl-meta" data-i18n="download.meta">v0.1 Demo · Windows · 免费试玩</p>
+        <p class="dl-note" data-i18n="download.note">下载链接由制作组手动更新，若无法打开请稍后再试。</p>
+      </div>
+
+      <aside class="credits">
+        <p class="credits-label" data-i18n="download.credits">制作</p>
+        <ul>
+          <li><span>Director</span><b>Error_Sun</b></li>
+          <li><span>Bilibili</span><a href="https://space.bilibili.com/430791072" target="_blank" rel="noopener">space.bilibili.com/430791072</a></li>
+          <li><span>Email</span><a href="mailto:orangesun776@163.com">orangesun776@163.com</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 底部 HUD ============ -->
+<footer class="deck-foot">
+  <div class="foot-meta">
+    <p class="foot-copy"><span>© 2026 虎卫五</span><i>16+</i></p>
+
+    <div class="legal">
+      <div class="legal-item">
+        <button type="button" class="legal-btn" data-i18n="legal.notice">声明</button>
+        <div class="legal-pop">
+          <p class="legal-pop-title" data-i18n="legal.noticeTitle">开发声明</p>
+          <p data-i18n="legal.n1">本游戏使用 Godot Engine（MIT License）开发。</p>
+          <p data-i18n="legal.n2">游戏玩法、流程逻辑由作者设计，GDScript 脚本由 AI 辅助生成，经作者人工修改、调试。</p>
+          <p data-i18n="legal.n3">关键 CG 为作者手绘原创；次要场景背景为 AI 辅助生成。</p>
+        </div>
+      </div>
+
+      <div class="legal-item">
+        <button type="button" class="legal-btn" data-i18n="legal.copy">版权声明</button>
+        <div class="legal-pop">
+          <p class="legal-pop-title" data-i18n="legal.copyTitle">版权声明</p>
+          <p data-i18n="legal.c1">角色、剧本、手绘美术著作权归作者本人所有。</p>
+          <p data-i18n="legal.c2">允许个人非盈利二创，禁止未经许可私自开团、售卖、摊费回本、任何形式商用。</p>
+          <p data-i18n="legal.c3">若需要小规模二创开团、商用授权，请私信作者单独申请。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress">
+    <div class="bars" id="bars" role="tablist" aria-label="分屏导航"></div>
+    <span class="counter"><b id="pageNow">01</b> / 05</span>
+  </div>
+
+  <div class="arrows">
+    <button type="button" id="prevBtn" aria-label="上一屏">&#8249;</button>
+    <button type="button" id="nextBtn" aria-label="下一屏">&#8250;</button>
+  </div>
+</footer>
+
+<!-- ============ 内容预警（进入强制确认） ============ -->
+<div class="warning" id="warning" role="dialog" aria-modal="true" aria-labelledby="warningTitle">
+  <div class="warning-panel">
+    <div class="warning-head">
+      <div>
+        <p class="warning-label" data-i18n="warning.label">CONTENT WARNING</p>
+        <h2 id="warningTitle" data-i18n="warning.title">内容预警</h2>
+      </div>
+      <div class="warning-lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中文</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ja">日本語</button>
+      </div>
+    </div>
+    <div class="warning-body">
+      <p data-i18n="warning.t1">本作品为架空科幻故事，包含星际战争、文明冲突、大屠杀、文明覆灭相关沉重悲剧叙事，剧情基调压抑，部分情节容易带来心理冲击。</p>
+      <p data-i18n="warning.t2">所有文明、势力、事件完全虚构，和现实世界、历史、国家无关，不代表现实立场。</p>
+      <p data-i18n="warning.t3">本作无专门感情线，主要人物中包含女性，角色设定包含多元性取向：部分 NPC 为异性恋；作品不含低俗、不雅内容，请根据自身喜好选择体验。</p>
+      <p data-i18n="warning.t4">建议 16 周岁以上体验；未成年人请监护人充分评估后陪同体验，心理承受能力弱、容易 PTSD 的人群谨慎游玩。</p>
+    </div>
+    <button type="button" class="btn btn-solid warning-accept" id="warningAccept" data-i18n="warning.accept">我已了解，继续</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<!-- 背景音乐：首次点击内容预警的确认按钮后开始循环播放 -->
+<audio id="bgm" src="assets/audio/bgm.mp3" loop preload="none"></audio>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
